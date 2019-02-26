@@ -59,13 +59,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		7018BE1F760290422947A6E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7018BE1F760290422947A6E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8F238F716F65762CC5FCFA3 /* Pods-YAXLogining_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAXLogining_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAXLogining_Example/Pods-YAXLogining_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C6DA864E08501FC63CEB75E5 /* YAXLogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YAXLogining.podspec; path = ../YAXLogining.podspec; sourceTree = "<group>"; };
+		C6DA864E08501FC63CEB75E5 /* YAXLogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YAXLogining.podspec; path = ../YAXLogining.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C962E55B012C631D11B0869D /* Pods_YAXLogining_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YAXLogining_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F13A98E8A2E913FB13E83D7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F13A98E8A2E913FB13E83D7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F5CB601CE4AA91A8D8147459 /* Pods_YAXLogining_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YAXLogining_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -338,10 +338,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YAXLogining_Example/Pods-YAXLogining_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TRUNetworking/TRUNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/YAXLogining/YAXLogining.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRUNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YAXLogining.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +509,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YAXLogining/YAXLogining-Prefix.pch";
 				INFOPLIST_FILE = "YAXLogining/YAXLogining-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,6 +525,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YAXLogining/YAXLogining-Prefix.pch";
 				INFOPLIST_FILE = "YAXLogining/YAXLogining-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

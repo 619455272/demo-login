@@ -7,6 +7,8 @@
 //
 
 #import "YAXViewController.h"
+#import "YAXNetWorking.h"
+
 
 @interface YAXViewController ()
 
